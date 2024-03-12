@@ -1,6 +1,24 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
 #simulation {
     position: relative;
-    height: 200px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #ddd;
+    border-radius: 5px;
+    width: 50%;
 }
 
 #object {
@@ -9,7 +27,8 @@
     left: 50%;
     width: 20mm;
     height: 20mm;
-    background-color: blue;
+    background-color: #007bff;
+    border-radius: 5px;
     transform: translateX(-50%);
 }
 
@@ -21,4 +40,26 @@
     background-color: rgba(0, 0, 0, 0.5);
     transform-origin: top left;
     transform: translateX(-50%) scaleX(0);
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+input[type="time"], button {
+    font-size: 16px;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
 }
