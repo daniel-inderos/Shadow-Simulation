@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="simulation">
-        <div id="object"></div>
-        <div id="shadow"></div>
+    <div class="container">
+        <h1>Shadow Length Simulator</h1>
+        <div id="simulation">
+            <div id="object"></div>
+            <div id="shadow"></div>
+        </div>
+        <div class="controls">
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" value="12:00" disabled>
+            <button id="startBtn">Enter</button>
+        </div>
     </div>
-    <label for="time">Select Time:</label>
-    <input type="time" id="time" name="time" value="12:00">
     <script src="script.js"></script>
 </body>
 </html>
